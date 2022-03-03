@@ -41,7 +41,7 @@ public class GameService {
         }
     }
 
-    public String searchTwitch(String url) throws TwitchException {
+    private String searchTwitch(String url) throws TwitchException {
         CloseableHttpClient httpClient = HttpClients.createDefault();
         ResponseHandler<String> responseHandler = response -> {
             int responseCode = response.getStatusLine().getStatusCode();
