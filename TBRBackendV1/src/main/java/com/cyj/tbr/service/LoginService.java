@@ -10,6 +10,8 @@ public class LoginService {
     @Autowired
     private LoginDao loginDao;
 
-
+    public String verifyLogin(String userId, String password) {
+        return loginDao.verifyLogin(userId, password);
+    }
 
 }
