@@ -18,8 +18,8 @@ public class FavoriteService {
         favoriteDao.setFavoriteItem(userId, item);
     }
 
-    public void unsetFavoriteItem(String userId, Item item) {
-        favoriteDao.unsetFavoriteItem(userId, item);
+    public void unsetFavoriteItem(String userId, String itemId) {
+        favoriteDao.unsetFavoriteItem(userId, itemId);
     }
 
     public Map<String, List<Item>> getFavoriteItems(String userId) {

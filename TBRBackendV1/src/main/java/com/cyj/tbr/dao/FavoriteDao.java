@@ -35,14 +35,15 @@ public class FavoriteDao {
         }
     }
 
-    public void unsetFavoriteItem(String userId, Item item) {
+    public void unsetFavoriteItem(String userId, String itemId) {
         Session session = null;
         try {
             session = sessionFactory.openSession();
             User user = session.get(User.class, userId);
+            Item item = session.get(Item.class, itemId);
             user.getItemSet().remove(item);
             session.beginTransaction();
-            session.save(user);
+            session.update(user);
             session.getTransaction().commit();
         } catch (Exception e) {
             e.printStackTrace();

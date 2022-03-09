@@ -43,8 +43,8 @@ public class FavoriteController {
             response.setStatus(HttpServletResponse.SC_FORBIDDEN);
             return;
         }
-        String userId = (String) session.getAttribute("userId");
-        favoriteService.unsetFavoriteItem(userId, requestBody.getFavoriteItem());
+        String userId = (String) session.getAttribute("user_id");
+        favoriteService.unsetFavoriteItem(userId, requestBody.getFavoriteItem().getId());
     }
 
     @RequestMapping(value = "/favorite", method = RequestMethod.GET)
@@ -55,7 +55,7 @@ public class FavoriteController {
             response.setStatus(HttpServletResponse.SC_FORBIDDEN);
             return new HashMap<>();
         }
-        String userId = (String) session.getAttribute("userId");
+        String userId = (String) session.getAttribute("user_id");
         return favoriteService.getFavoriteItems(userId);
     }
 
