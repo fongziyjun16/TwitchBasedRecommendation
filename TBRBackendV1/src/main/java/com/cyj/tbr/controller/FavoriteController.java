@@ -31,7 +31,7 @@ public class FavoriteController {
             response.setStatus(HttpServletResponse.SC_FORBIDDEN);
             return;
         }
-        String userId = (String) session.getAttribute("userId");
+        String userId = (String) session.getAttribute("user_id");
         favoriteService.setFavoriteItem(userId, requestBody.getFavoriteItem());
     }
 
@@ -58,6 +58,5 @@ public class FavoriteController {
         String userId = (String) session.getAttribute("userId");
         return favoriteService.getFavoriteItems(userId);
     }
-
 
 }
