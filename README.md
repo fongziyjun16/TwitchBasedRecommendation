@@ -1,1 +1,3 @@
 # TwitchBasedRecommendation
+
+![](./imgs/BackendStructure.jpg)
