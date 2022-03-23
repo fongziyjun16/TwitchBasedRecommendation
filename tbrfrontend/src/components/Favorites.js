@@ -1,7 +1,6 @@
 import React from 'react';
-import { Menu, Button, Drawer, message } from 'antd';
+import { Menu, Button, Drawer } from 'antd';
 import { EyeOutlined, YoutubeOutlined, VideoCameraOutlined, StarFilled } from '@ant-design/icons';
-import { getFavoriteItem } from '../utils';
 
 const { SubMenu } = Menu;
 const MenuKey = {
@@ -12,11 +11,6 @@ const MenuKey = {
 class Favorites extends React.Component {
     state = {
         displayDrawer: false,
-        data: {
-            VIDEO: [],
-            STREAM: [],
-            CLIP: [],
-        }
     }
 
     onDrawerClose = () => {
@@ -26,19 +20,13 @@ class Favorites extends React.Component {
     }
 
     onFavoriteClick = () => {
-        getFavoriteItem()
-            .then((data) => {
-                this.setState({
-                    data,
-                    displayDrawer: true,
-                })
-            }).catch((err) => {
-            message.error(err.message);
+        this.setState({
+            displayDrawer: true,
         })
     }
 
     render = () => {
-        const { VIDEO, STREAM, CLIP } = this.state.data;
+        const { VIDEO, STREAM, CLIP } = this.props.data;
 
         return (
             <>
