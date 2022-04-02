@@ -1,5 +1,19 @@
 # TwitchBasedRecommendation
 
+## Description
+
+After user register and login
+
+- They can see the top games list on the left.
+- They can search games.
+- They can favorite games.
+
+The appliation will recommend new games to users according to their favorite games.
+
+For each games, there are streams, vedios and clips being displayed.
+
+
+
 ## Code structure
 
 ![Code Structure](./imgs/BackendStructure.jpg)
@@ -37,3 +51,4 @@
   `sudo docker build -t tbr:1.0 .`
 
 - `sudo docker run -d -p 80:8080 tbr:1.0`
+
