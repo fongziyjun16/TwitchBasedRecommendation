@@ -12,8 +12,6 @@ The appliation will recommend new games to users according to their favorite gam
 
 For each games, there are streams, vedios and clips being displayed.
 
-## App URL
-http://54.163.97.62/
 
 ## Code structure
 
