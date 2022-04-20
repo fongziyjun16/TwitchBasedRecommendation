@@ -1,3 +1,4 @@
 /.idea
 /TwitchBasedRecommendation.iml
 /target
+/src/main/resources/spring.xml
