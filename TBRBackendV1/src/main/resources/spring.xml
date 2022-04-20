@@ -28,7 +28,7 @@
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
         <property name="url" value="jdbc:mysql://localhost:3306/twitch?createDatabaseIfNotExist=true&amp;serverTimezone=UTC"/>
         <property name="username" value="root"/>
-        <property name="password" value="chichichacha"/>
+        <property name="password" value="aaa"/>
     </bean>
 
 </beans>
