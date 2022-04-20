@@ -26,9 +26,9 @@
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://laiprojs-instance.caavufpdl0qc.us-east-1.rds.amazonaws.com:3306/twitch?createDatabaseIfNotExist=true&amp;serverTimezone=UTC"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/twitch?createDatabaseIfNotExist=true&amp;serverTimezone=UTC"/>
         <property name="username" value="root"/>
-        <property name="password" value="MySQL8.0!"/>
+        <property name="password" value="chichichacha"/>
     </bean>
 
 </beans>
