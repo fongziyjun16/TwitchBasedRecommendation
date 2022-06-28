@@ -33,6 +33,8 @@ For each games, there are streams, vedios and clips being displayed.
 
 ### Application
 
+- Using AWS EC2
+
 - Maven Install for getting `war` file
 
 - Login into remote server and install docker
